@@ -33,17 +33,22 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
-	<style>
+  <style>
 	  #modalImage {
-	    max-width: 100%;
+	    width: 100%;
 	    height: auto;
+	    max-width: none;   /* prevent Bulma from shrinking it */
 	  }
+	
 	  .modal-content {
-	    max-width: 90vw;
-	    max-height: 90vh;
+	    max-width: 95vw;   /* modal width relative to viewport */
+	    max-height: 95vh;  /* modal height relative to viewport */
 	  }
-	</style>
-
+	
+	  .modal-content img {
+	    object-fit: contain; /* keep aspect ratio */
+	  }
+  </style>	
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -53,6 +58,8 @@
 </head>
 <body>
 
+
+	
 
 <section class="hero">
   <div class="hero-body">
