@@ -35,10 +35,13 @@
 
   <style>
 	  #modalImage {
-	    width: 200%;
-	    height: auto;
-	    max-width: none;   /* prevent Bulma from shrinking it */
-	  }
+	  max-width: 90vw;   /* take up at most 90% of viewport width */
+	  max-height: 90vh;  /* take up at most 90% of viewport height */
+	  width: auto;       /* scale proportionally */
+	  height: auto;
+	  display: block;
+	  margin: 0 auto;    /* center horizontally */
+	}
 	
 	  .modal-content {
 	    max-width: 95vw;   /* modal width relative to viewport */
